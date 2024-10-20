@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
+import { BsSearch } from "react-icons/bs";
 const Header = () => {
   return (
     <>
@@ -31,21 +32,44 @@ const Header = () => {
               </h2>
             </div>
             <div className="col-5">
-              <div class="input-group mb-3">
+              <div class="input-group ">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Search Product Here"
-                  aria-label="Recipient's username"
+                  aria-label="Search Product Here"
                   aria-describedby="basic-addon2"
                 />
-                <span class="input-group-text" id="basic-addon2">
-                  @example.com
-                </span>{" "}
+                <span class="input-group-text p-3" id="basic-addon2">
+                  <BsSearch className="fs-6"/>
+                </span>
                 /
               </div>
             </div>
-            <div className="col-9"></div>
+            <div className="col-5">
+              <div className="header-upper-links d-flex align-items-center justify-content-between">
+                <div>
+                  <Link>
+                  <img src="images/compare.svg" alt="" /></Link>
+                  <p></p>
+                </div>
+                <div>
+                  <Link>
+                  <img src="" alt="" /></Link>
+                  <p></p>
+                </div>
+                <div>
+                  <Link>
+                  <img src="" alt="" /></Link>
+                  <p></p>
+                </div>
+                <div>
+                  <Link>
+                  <img src="" alt="" /></Link>
+                  <p></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </header>
