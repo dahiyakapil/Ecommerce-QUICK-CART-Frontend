@@ -5,6 +5,8 @@ import compareImage from "../images/images/compare.svg"
 import wishlistImage from "../images/images/wishlist.svg"
 import userImage from "../images/images/user.svg"
 import cartImage from "../images/images/cart.svg"
+import menuImage from "../images/images/menu.svg"
+
 const Header = () => {
   return (
     <>
@@ -104,7 +106,7 @@ const Header = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <img src="images/images/menu.svg" alt="" />
+                    <img src={menuImage} alt="" />
                     <span className="me-5 d-inline-block">Shop Categories</span>
                   </button>
                   <ul
