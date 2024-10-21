@@ -18,16 +18,21 @@ import headphone from "../images/images/headphone.jpg";
 import laptop from "../images/images/laptop.jpg";
 import homeapp from "../images/images/homeapp.jpg";
 import speaker from "../images/images/speaker.jpg";
-import brand1 from "../images/images/brand-01.png"
-import brand2 from "../images/images/brand-02.png"
-import brand3 from "../images/images/brand-03.png"
-import brand4 from "../images/images/brand-04.png"
-import brand5 from "../images/images/brand-05.png"
-import brand6 from "../images/images/brand-06.png"
-import brand7 from "../images/images/brand-07.png"
-import brand8 from "../images/images/brand-08.png"
+import brand1 from "../images/images/brand-01.png";
+import brand2 from "../images/images/brand-02.png";
+import brand3 from "../images/images/brand-03.png";
+import brand4 from "../images/images/brand-04.png";
+import brand5 from "../images/images/brand-05.png";
+import brand6 from "../images/images/brand-06.png";
+import brand7 from "../images/images/brand-07.png";
+import brand8 from "../images/images/brand-08.png";
+import famous1 from "../images/images/famous-1.webp";
+import famous2 from "../images/images/famous-2.webp";
+import famous3 from "../images/images/famous-3.webp";
+import famous4 from "../images/images/famous-4.webp";
 import BlogCard from "../components/BlogCard";
-
+import ProductCard from "../components/ProductCard";
+import SpecialProduct from "../components/SpecialProduct";
 
 const Home = () => {
   return (
@@ -228,68 +233,154 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="marque-wrapper py-5">
+      <section className="featured-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
-          <div className="ro">
+          <div className="row">
             <div className="col-12">
-              <div className="marquee-inner-wrapper card-wrapper ">
-              <Marquee>
-                <div className="d-flex">
-                  <div className="mx-4 w-25">
-                    <img src={brand1} alt="brand" />
-                  </div>
-                  <div className="mx-4 w-25">
-                    <img src={brand2} alt="brand" />
-                  </div>
-               
-                  <div className="mx-4 w-25">
-                    <img src={brand3} alt="brand" />
-                  </div>
-                  <div className="mx-4 w-25">
-                    <img src={brand4}alt="brand" />
-                  </div>
-                  <div className="mx-4 w-25">
-                    <img src={brand5}alt="brand" />
-                  </div>
-                  <div className="mx-4 w-25">
-                    <img src={brand6}alt="brand" />
-                  </div>
-                  <div className="mx-4 w-25">
-                    <img src={brand7}alt="brand" />
-                  </div>
+              <h3 className="section-heading">Featured Collection</h3>
+            </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+      <section className="famous-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src={famous1} alt="famous" className="img-fluid" />
+                <div className="famous-content position-absolute">
+                  <h5>Big Screen</h5>
+                  <h6>Smart Watch Series 7</h6>
+                  <p>
+                    Big Screen Smart Watch Series 7 From $399or $16.62/mo. for
+                    24 mo.
+                  </p>
                 </div>
-                <div className="mx-4 w-25">
-                    <img src={brand8}alt="brand" />
-                  </div>
-              </Marquee>
+              </div>
+            </div>
+
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src={famous2} alt="famous" className="img-fluid" />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Studio Display</h5>
+                  <h6 className="text-dark">600 nits of brightness.</h6>
+                  <p className="text-dark">27-inch 5K Retina display</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src={famous3} alt="famous" className="img-fluid" />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Smartphones</h5>
+                  <h6 className="text-dark">Smartphone 13 Pro.</h6>
+                  <p className="text-dark">
+                    Now in Green. From $999.00 or $41.62/mo.for 24 mo. Footnote*
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src={famous4} alt="famous" className="img-fluid" />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Home Speakers</h5>
+                  <h6 className="text-dark">Room-filling sound.</h6>
+                  <p className="text-dark">
+                    From $699 or $116.58/mo. for 12 mo.*
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="blog-wrapper py-5 home-wrapper-2">
-        <div className="conatiner-xxl">
+      <section className="special-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <h3 className="section-heading">Featured Collection</h3>
+              <h3 className="section-heading">Special Products</h3>
+              <div className="row">
+                <SpecialProduct />
+                <SpecialProduct />
+                <SpecialProduct />
+                <SpecialProduct />
+              </div>
             </div>
-           <BlogCard />
-           <BlogCard />
-           <BlogCard />
-           <BlogCard />
           </div>
         </div>
       </section>
+      <section className="popular-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Our Popular Products</h3>
+            </div>
+          </div>
+          <div className="row">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+      <section className="marque-wrapper py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <div className="marquee-inner-wrapper card-wrapper ">
+                <Marquee>
+                  <div className="d-flex">
+                    <div className="mx-4 w-25">
+                      <img src={brand1} alt="brand" />
+                    </div>
+                    <div className="mx-4 w-25">
+                      <img src={brand2} alt="brand" />
+                    </div>
+
+                    <div className="mx-4 w-25">
+                      <img src={brand3} alt="brand" />
+                    </div>
+                    <div className="mx-4 w-25">
+                      <img src={brand4} alt="brand" />
+                    </div>
+                    <div className="mx-4 w-25">
+                      <img src={brand5} alt="brand" />
+                    </div>
+                    <div className="mx-4 w-25">
+                      <img src={brand6} alt="brand" />
+                    </div>
+                    <div className="mx-4 w-25">
+                      <img src={brand7} alt="brand" />
+                    </div>
+                  </div>
+                  <div className="mx-4 w-25">
+                    <img src={brand8} alt="brand" />
+                  </div>
+                </Marquee>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="blog-wrapper py-5 home-wrapper-2">
-        <div className="conatiner-xxl">
+        <div className="container-xxl">
           <div className="row">
             <div className="col-12">
               <h3 className="section-heading">Out Latest Blogs</h3>
             </div>
-           <BlogCard />
-           <BlogCard />
-           <BlogCard />
-           <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
           </div>
         </div>
       </section>
