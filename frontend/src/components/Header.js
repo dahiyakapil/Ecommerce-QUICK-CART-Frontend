@@ -1,11 +1,11 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
-import compareImage from "../images/images/compare.svg"
-import wishlistImage from "../images/images/wishlist.svg"
-import userImage from "../images/images/user.svg"
-import cartImage from "../images/images/cart.svg"
-import menuImage from "../images/images/menu.svg"
+import compareImage from "../images/images/compare.svg";
+import wishlistImage from "../images/images/wishlist.svg";
+import userImage from "../images/images/user.svg";
+import cartImage from "../images/images/cart.svg";
+import menuImage from "../images/images/menu.svg";
 
 const Header = () => {
   return (
@@ -134,7 +134,7 @@ const Header = () => {
               <div className="menu-links">
                 <div className="d-flex align-items-center gap-15">
                   <NavLink to="/">Home</NavLink>
-                  <NavLink to="/">Out Store</NavLink>
+                  <NavLink to="/store">Out Store</NavLink>
                   <NavLink to="/">Blogs</NavLink>
                   <NavLink to="/contact">Contact</NavLink>
                 </div>
