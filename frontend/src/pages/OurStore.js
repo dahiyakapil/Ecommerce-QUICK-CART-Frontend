@@ -1,8 +1,13 @@
 import React from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
-import watch from "../images/images/watch.jpg";
 import ReactStars from "react-rating-stars-component";
+import watch from "../images/images/watch.jpg";
+import gr from "../images/images/gr.svg";
+import gr2 from "../images/images/gr2.svg";
+import gr3 from "../images/images/gr3.svg";
+import gr4 from "../images/images/gr4.svg";
+
 const OurStore = () => {
   return (
     <>
@@ -181,7 +186,61 @@ const OurStore = () => {
                 </div>
               </div>
             </div>
-            <div className="col-9"></div>
+            <div className="col-9">
+              <div className="filter-sort-grid mb-4">
+                <div className="d-flex justify-content-between align-items-center ">
+                  <div className="d-flex align-items-center gap-10">
+                    <p className="mb-0 d-block "  style={{"width": "100px"}}> Sort By: </p>
+                    <select name="" className="form-control form-select" id="">
+                      <option value="manual">Featured</option>
+                      <option value="best-selling" selected="selected">
+                        Best selling
+                      </option>
+                      <option value="title-ascending">
+                        Alphabetically, A-Z
+                      </option>
+                      <option value="title-descending">
+                        Alphabetically, Z-A
+                      </option>
+                      <option value="price-ascending">
+                        Price, low to high
+                      </option>
+                      <option value="price-descending">
+                        Price, high to low
+                      </option>
+                      <option value="created-ascending">
+                        Date, old to new
+                      </option>
+                      <option value="created-descending">
+                        Date, new to old
+                      </option>
+                    </select>
+                  </div>
+                  <div className="d-flex align-items-center gap-10">
+                    <p className="totalproducts mb-0">21 Products</p>
+                    <div className="grid d-flex gap-10 align-items-center">
+                      <img
+                        src={gr4}
+                        className="d-block img-fluid "
+                        alt="grid"
+                      />
+                      <img
+                        src={gr3}
+                        className="d-block img-fluid "
+                        alt="grid"
+                      />
+                      <img
+                        src={gr2}
+                        className="d-block img-fluid "
+                        alt="grid"
+                      />
+
+                      <img src={gr} className="d-block img-fluid " alt="grid" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
