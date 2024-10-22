@@ -223,47 +223,49 @@ const OurStore = () => {
                     </select>
                   </div>
                   <div className="d-flex align-items-center gap-10">
-                    <p className="totalproducts mb-0">21 Products</p>
-                    <div className="grid d-flex gap-10 align-items-center">
-                      <img
-                        onClick={() => {
-                          setGrid(3);
-                        }}
-                        src={gr4}
-                        className="d-block img-fluid "
-                        alt="grid"
-                      />
-                      <img
-                        onClick={() => {
-                          setGrid(4);
-                        }}
-                        src={gr3}
-                        className="d-block img-fluid "
-                        alt="grid"
-                      />
-                      <img
-                        onClick={() => {
-                          setGrid(6);
-                        }}
-                        src={gr2}
-                        className="d-block img-fluid "
-                        alt="grid"
-                      />
+                  <p className="totalProducts mb-0">21 Products</p>
+                  <div className="d-flex gap-10 align-items-center grid">
+                    <img
+                      onClick={() => {
+                        setGrid(3);
+                      }}
+                      src={gr4}
+                      className="d-block img-fluid"
+                      alt="grid"
+                    />
+                    <img
+                      onClick={() => {
+                        setGrid(4);
+                      }}
+                      src={gr3}
+                      className="d-block img-fluid"
+                      alt="grid"
+                    />
+                    <img
+                      onClick={() => {
+                        setGrid(6);
+                      }}
+                      src={gr2}
+                      className="d-block img-fluid"
+                      alt="grid"
+                    />
 
-                      <img
-                        onClick={() => {
-                          setGrid(2);
-                        }}
-                        src={gr}
-                        className="d-block img-fluid "
-                        alt="grid"
-                      />
+                    <img
+                      onClick={() => {
+                        setGrid(12);
+                      }}
+                      src={gr}
+                      className="d-block img-fluid"
+                      alt="grid"
+                    />
                     </div>
                   </div>
                 </div>
               </div>
               <div className="products-list pb-5">
+              <div className="d-flex gap-10 flex-wrap">
                 <ProductCard grid={grid} />
+                </div>
               </div>
             </div>
           </div>
