@@ -332,6 +332,12 @@ footer .input-group-text {
   color: var(--color-1c1c1b);
 }
 
+.product-card p.description {
+  font-size: 13px;
+  color: var(--color-777777);
+  margin-right: 20px;
+}
+
 .action-bar {
   top: 20%;
   right: -23px;
@@ -465,7 +471,6 @@ footer .input-group-text {
   background-color: white;
   border-radius: 10px;
 }
-
 .grid img {
   width: 35px;
   height: 35px;
@@ -490,6 +495,31 @@ footer .input-group-text {
 .gr-3 {
   width: 24%;
 }
+
+.gr-6 .product-image {
+  width: 100%;
+}
+
+.gr-6 .product-image img {
+  margin: auto;
+  display: block;
+}
+
+.gr-12 .product-card {
+  display: flex;
+  gap: 20px;
+}
+
+.gr-12 .product-card .product-image {
+  width: 270px;
+  height: auto;
+}
+
+.gr-12 .action-bar {
+  top: 17%;
+}
+
+
 
 
 

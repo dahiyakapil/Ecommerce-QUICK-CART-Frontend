@@ -9,22 +9,23 @@ import view from "../images/images/view.svg";
 import addCart from "../images/images/add-cart.svg";
 import wishlist from "../images/images/wish.svg";
 
-
 const ProductCard = (props) => {
-  const {grid} =props;
+  const { grid } = props;
   let location = useLocation();
   return (
-
     <>
-     <div className={`${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}>
-      <div className="product-card position-relative">
-        <div className="wishlist-icon position-absolute">
-            <Link><img src={wishlist} alt="" /></Link>
-        </div>
-        <div className="product-image">
-          <img src={watch} alt="product image"  className="img-fluid"/>
-          <img src={watch2} alt="product image" className="img-fluid"/>
-
+      <div
+        className={`${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}
+      >
+        <div className="product-card position-relative">
+          <div className="wishlist-icon position-absolute">
+            <Link>
+              <img src={wishlist} alt="" />
+            </Link>
+          </div>
+          <div className="product-image">
+            <img src={watch} alt="product image" className="img-fluid" />
+            <img src={watch2} alt="product image" className="img-fluid" />
           </div>
           <div className="product-details">
             <h6 className="brand">Havels</h6>
@@ -38,27 +39,44 @@ const ProductCard = (props) => {
               edit={false}
               activeColor="#ffd700"
             />
+            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
+              These cases are perfectly simple and easy to distinguish. In a
+              free hour, when our power of choice is untrammelled and when
+              nothing prevents our being able to do what we like best, every
+              pleasure is to be welcomed and every pain avoided. But in certain
+              circumstances and owing to the claims of duty or the obligations
+              of business it will frequently occur that pleasures...
+            </p>
             <p className="price">$100.00</p>
           </div>
-            <div className="action-bar position-absolute">
-                <div className="d-flex flex-column gap-15">
-                    <Link><img src={prodcompare} alt="prod compare" /></Link>
-                    <Link><img src={view} alt="view" /></Link>
-                    <Link><img src={addCart} alt="add to cart" /></Link>
-                </div>
+          <div className="action-bar position-absolute">
+            <div className="d-flex flex-column gap-15">
+              <Link>
+                <img src={prodcompare} alt="prod compare" />
+              </Link>
+              <Link>
+                <img src={view} alt="view" />
+              </Link>
+              <Link>
+                <img src={addCart} alt="add to cart" />
+              </Link>
             </div>
-      </div>
-    </div>
-
-    <div className={`${location.pathname == "/store" ?`gr-${grid}`: "col-3"}`}>
-      <div className="product-card position-relative">
-        <div className="wishlist-icon position-absolute">
-            <Link><img src={wishlist} alt="" /></Link>
+          </div>
         </div>
-        <div className="product-image">
-          <img src={watch} alt="product image"  className="img-fluid"/>
-          <img src={watch2} alt="product image" className="img-fluid"/>
+      </div>
 
+      <div
+        className={`${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}
+      >
+        <div className="product-card position-relative">
+          <div className="wishlist-icon position-absolute">
+            <Link>
+              <img src={wishlist} alt="" />
+            </Link>
+          </div>
+          <div className="product-image">
+            <img src={watch} alt="product image" className="img-fluid" />
+            <img src={watch2} alt="product image" className="img-fluid" />
           </div>
           <div className="product-details">
             <h6 className="brand">Havels</h6>
@@ -72,20 +90,32 @@ const ProductCard = (props) => {
               edit={false}
               activeColor="#ffd700"
             />
+            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
+              These cases are perfectly simple and easy to distinguish. In a
+              free hour, when our power of choice is untrammelled and when
+              nothing prevents our being able to do what we like best, every
+              pleasure is to be welcomed and every pain avoided. But in certain
+              circumstances and owing to the claims of duty or the obligations
+              of business it will frequently occur that pleasures...
+            </p>
             <p className="price">$100.00</p>
           </div>
-            <div className="action-bar position-absolute">
-                <div className="d-flex flex-column gap-15">
-                    <Link><img src={prodcompare} alt="prod compare" /></Link>
-                    <Link><img src={view} alt="view" /></Link>
-                    <Link><img src={addCart} alt="add to cart" /></Link>
-                </div>
+          <div className="action-bar position-absolute">
+            <div className="d-flex flex-column gap-15">
+              <Link>
+                <img src={prodcompare} alt="prod compare" />
+              </Link>
+              <Link>
+                <img src={view} alt="view" />
+              </Link>
+              <Link>
+                <img src={addCart} alt="add to cart" />
+              </Link>
             </div>
+          </div>
+        </div>
       </div>
-    </div>
     </>
-   
-    
   );
 };
 
