@@ -290,7 +290,7 @@ footer .input-group-text {
 /* Blog Part Ends Here */
 
 /* Product Card */
-.product-card{
+.product-card {
   padding: 15px;
   background-color: white;
   border-radius: 10px;
@@ -301,20 +301,18 @@ footer .input-group-text {
 .product-card .product-image {
   height: 270px;
 }
-.product-card .product-image img{
+.product-card .product-image img {
   object-fit: contain;
 }
 
-
-.product-card:hover .product-image > img:nth-child(1){
-  display: none;
-
-}
-
-.product-card .product-image>img:last-child {
+.product-card:hover .product-image > img:nth-child(1) {
   display: none;
 }
-.product-card:hover .product-image > img:last-child{
+
+.product-card .product-image > img:last-child {
+  display: none;
+}
+.product-card:hover .product-image > img:last-child {
   display: block;
 }
 .product-card:hover .action-bar {
@@ -325,7 +323,6 @@ footer .input-group-text {
   color: var(--color-orange);
   font-size: 13px;
 }
-
 
 .product-card .product-details h5 {
   font-size: 15px;
@@ -351,7 +348,6 @@ footer .input-group-text {
 
 /* Product Card Ends Here*/
 
-
 /* Special product */
 .special-product-card {
   padding: 10px;
@@ -366,7 +362,7 @@ footer .input-group-text {
 /* Special product Ends Here*/
 
 /* Famous Card */
-.famous-card .famous-content{
+.famous-card .famous-content {
   top: 10%;
   left: 10%;
 }
@@ -396,12 +392,11 @@ footer .input-group-text {
   color: white;
 }
 
-
 /* Famous Card Ends Here*/
 
 /* Our Store */
 
-.filter-card{
+.filter-card {
   background-color: white;
   border-radius: 10px;
   padding: 15px 15px 25px;
@@ -434,7 +429,6 @@ footer .input-group-text {
   border-color: rgba(0, 0, 0, 0.25);
 }
 
-
 .sub-title {
   font-size: 14px;
   font-weight: 600;
@@ -450,7 +444,7 @@ footer .input-group-text {
   flex-wrap: wrap;
   gap: 10px;
 }
-.colors li{
+.colors li {
   width: 20px;
   height: 20px;
   background-color: red;
@@ -462,7 +456,7 @@ footer .input-group-text {
   margin-bottom: 8px;
 }
 
-.random-products:first-child{
+.random-products:first-child {
   border-bottom: 1px solid var(--color-ededed);
 }
 
@@ -519,8 +513,43 @@ footer .input-group-text {
   top: 17%;
 }
 
-
-
-
-
 /* Our Store Ends Here*/
+
+/* Contact Page */
+.contact-inner-wrapper {
+  padding: 30px 20px;
+  border-radius: 15px;
+  background-color: white;
+  gap: 15px;
+}
+
+.contact-inner-wrapper > div {
+  width: 48%;
+}
+
+.contact-title {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+  font-family: var(--font-family);
+}
+
+.contact-inner-wrapper form .form-control {
+  background-color: var(--color-f5f5f7);
+  border-radius: 10px;
+  border-color: transparent;
+  padding: 10px;
+}
+
+
+.contact-inner-wrapper ul {
+  list-style: none;
+}
+
+.contact-inner-wrapper address,
+.contact-inner-wrapper a,
+.contact-inner-wrapper p {
+  color: var(--color-777777);
+}
+/* Contact Page Ends Here*/
