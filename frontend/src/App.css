@@ -542,7 +542,6 @@ footer .input-group-text {
   padding: 10px;
 }
 
-
 .contact-inner-wrapper ul {
   list-style: none;
 }
@@ -553,3 +552,43 @@ footer .input-group-text {
   color: var(--color-777777);
 }
 /* Contact Page Ends Here*/
+
+/* Compare Product Page */
+
+.compare-product-card {
+  padding: 20px 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.compare-product-card .cross {
+  top: 15px;
+  right: 15px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.comapre-product-details h5.title {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--color-1c1c1b);
+  font-family: var(--font-family);
+}
+
+.compare-product-details h6.price {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.compare-product-card .product-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/* Compare Product EndsPage */
