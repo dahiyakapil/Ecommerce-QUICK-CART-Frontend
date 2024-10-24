@@ -561,7 +561,7 @@ footer .input-group-text {
   border-radius: 10px;
 }
 
-.compare-product-card, .wishlist-card .cross{
+.compare-product-card .cross, .wishlist-card .cross{
   top: 15px;
   right: 15px;
   width: 20px;
